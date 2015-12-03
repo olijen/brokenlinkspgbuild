@@ -11,7 +11,7 @@ var app = {
     // with the InAppBrowser
     amendLinks: function(className) {
         var n = 0,
-            links = document.getElementsByClassName('external-link');
+            links = document.getElementsByClassName(className);
 
         for (; n < links.length; n++) {
             links[n].onclick = function(e) {
