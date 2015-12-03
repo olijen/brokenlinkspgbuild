@@ -16,7 +16,7 @@ var app = {
         for (; n < links.length; n++) {
             links[n].onclick = function(e) {
                 e.preventDefault();
-                cordova.InAppBrowser.open(''.concat(this.href), '_blank');
+                window.open(''.concat(this.href), '_blank');
             }
         }
     }
